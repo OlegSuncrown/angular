@@ -22,9 +22,10 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
         strictActionImmutability: true, // default value is true
       },
     }),
-    // Connects RouterModule with StoreModule, uses MinimalRouterStateSerializer by default
+    
     StoreRouterConnectingModule.forRoot({
       serializer: CustomSerializer,
+      // routerState: RouterState.Minimal,
     }),
 
     EffectsModule.forRoot([]),

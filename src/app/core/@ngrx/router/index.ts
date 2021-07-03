@@ -1,2 +1,2 @@
-export * from './custom-route-serializer'
+export * from './route-serializer'
 export * from './router-reducer'
