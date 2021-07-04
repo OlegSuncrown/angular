@@ -1,6 +1,6 @@
 import { Params, RouterStateSnapshot } from '@angular/router';
 import { RouterStateSerializer } from '@ngrx/router-store';
-import { RouterStateUrl } from './router-reducer';
+import { RouterStateUrl } from './router.reducer';
 
 export class CustomSerializer implements RouterStateSerializer<RouterStateUrl> {
   serialize(routerState: RouterStateSnapshot): RouterStateUrl {

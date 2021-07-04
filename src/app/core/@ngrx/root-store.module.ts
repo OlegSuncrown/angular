@@ -16,16 +16,15 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
   imports: [
     CommonModule,
     StoreModule.forRoot(routerReducers, {
-      // All checks will automatically be disabled in production builds
       runtimeChecks: {
-        strictStateImmutability: true, // default value is true
-        strictActionImmutability: true, // default value is true
+        strictStateImmutability: true,
+        strictActionImmutability: true, 
       },
     }),
     
     StoreRouterConnectingModule.forRoot({
+      stateKey: 'router',
       serializer: CustomSerializer,
-      // routerState: RouterState.Minimal,
     }),
 
     EffectsModule.forRoot([]),

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { selectUrl } from './core/@ngrx/router/router-selectors';
+import { selectUrl } from './core/@ngrx/router/router.selectors';
 
 @Component({
   selector: 'app-root',
